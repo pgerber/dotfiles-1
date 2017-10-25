@@ -32,6 +32,17 @@
 (global-set-key (kbd "C-x C-f") #'helm-find-files)
 (helm-mode 1)
 
+;;python
+(use-package elpy)
+(elpy-enable)
+(elpy-use-ipython)
+
+(use-package flycheck) ;on the fly syntax checking
+(setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
+(add-hook 'elpy-mode-hook 'flycheck-mode)
+
+(use-package ein) ;jupyter notebook
+
 ;; packages
 (use-package magit)
 (use-package org
