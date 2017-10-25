@@ -22,6 +22,7 @@ Plug 'scrooloose/nerdtree' "file explorer
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' } "code-completion
 Plug 'scrooloose/syntastic' "syntax checker
 Plug 'tpope/vim-unimpaired' "bracket mappings
+Plug 'ntpeters/vim-better-whitespace'
 call plug#end()
 " }}}
 
