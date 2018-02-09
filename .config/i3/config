@@ -185,3 +185,4 @@ bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
 
 # lock screen
 bindsym $mod+Shift+l exec i3lock -c 000000
+
